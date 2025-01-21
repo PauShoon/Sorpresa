@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorpresa</title>
+    <style>
+        body {
+            background-image: url('https://i.pinimg.com/736x/ee/f6/9a/eef69ae49152d1791a3d488736e954e6.jpg');
+            background-size: cover;  /* Para que la imagen cubra toda la pantalla */
+            background-position: center; /* Centra la imagen */
+            background-attachment: fixed; /* Hace que la imagen no se mueva al hacer scroll */
+        }
+        body {
+            background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 3em;
+            color: #9932CC;
+            animation: fadeInMove 4s ease-in-out infinite;
+        }
+
+        /* Definición de la animación */
+        @keyframes fadeInMove {
+            0% {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            50% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+            100% {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+        h1 {
+            font-size: 2.5em;
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+
+        .poem-list {
+            list-style-type: none;
+            padding: 0;
+            width: 80%;
+            max-width: 800px;
+        }
+
+        .poem-item {
+            background-color: #ffffff;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 15px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .poem-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .poem-title {
+            font-size: 1.8em;
+            color: #6A5ACD;
+            margin-bottom: 10px;
+        }
+
+        .poem-text {
+            font-size: 1.2em;
+            line-height: 1.6;
+            color: #34495e;
+        }
+
+        .poem-author {
+            font-style: italic;
+            color: #7f8c8d;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Espero te guste</h2>
+    <div>
+        <h1>Mi Lista de Poemas</h1>
+        <ul class="poem-list">
+            <li class="poem-item">
+                <div class="poem-title">El viento y el mar</div>
+                <div class="poem-text">
+                    El viento soplaba con fuerza, <br>
+                    El mar rugía en su profundidad. <br>
+                    Juntos, entrelazados en su danza, <br>
+                    Como un amor eterno, indomable.
+                </div>
+                <div class="poem-author">- Thomas Paulet</div>
+            </li>
+
+            <li class="poem-item">
+                <div class="poem-title">Sueños de luna</div>
+                <div class="poem-text">
+                    En la quietud de la noche, <br>
+                    La luna susurró sueños de plata. <br>
+                    Un abrazo etéreo, suave y sereno, <br>
+                    Un reflejo de paz en el alma.
+                </div>
+                <div class="poem-author">- Thomas Paulet</div>
+            </li>
+
+            <li class="poem-item">
+                <div class="poem-title">El jardín secreto</div>
+                <div class="poem-text">
+                    Un rincón escondido en el jardín, <br>
+                    Flores que nunca se dejan ver, <br>
+                    Susurra el viento entre las hojas, <br>
+                    Secretos que solo el corazón sabe entender.
+                </div>
+                <div class="poem-author">- Thomas Paulet</div>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
